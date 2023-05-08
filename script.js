@@ -12,7 +12,7 @@ function displayMovie() {
     }
     //If input field is NOT empty
     else {
-        fetch(`http://www.omdbapi.com/?t=${movieName}&apikey=50a352bb`)
+        fetch(`https://www.omdbapi.com/?t=${movieName}&apikey=50a352bb`)
             .then((resp) => resp.json())
             .then((data) => {
                 console.log(data);
